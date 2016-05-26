@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BasoProgressView">
+        <attr name="progressText" format="string"/>
+        <attr name="defaultErrorText" format="string"/>
+        <attr name="retryText" format="string"/>
+        <attr name="srcErrorImage" format="reference"/>
+        <attr name="firstProgressing" format="boolean"/>
+        <attr name="retriable" format="boolean"/>
+        <!--<attr name="labelPosition" format="enum">-->
+        <!--<enum name="left" value="0"/>-->
+        <!--<enum name="right" value="1"/>-->
+        <!--</attr>-->
+    </declare-styleable>
+</resources>
