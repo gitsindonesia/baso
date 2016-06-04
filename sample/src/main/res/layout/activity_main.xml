@@ -5,34 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <!--<BasoProgressView-->
-        <!--android:id="@+id/basoProgressView"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:defaultErrorText="Something happened"-->
-        <!--app:progressText="Loading"-->
-        <!--app:retryText="Retry"-->
-        <!--/>-->
+    <id.gits.baso.BasoProgressView
+        android:id="@+id/basoProgressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:defaultErrorText="Something happened"
+        app:progressText="Loading"
+        app:retryText="Retry"
+        />
 
     <Button
         android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="START LOREM"/>
+        android:text="START"/>
 
 
     <Button
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@id/btnStart"
         android:id="@+id/btnStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnStart"
         android:text="STOP"/>
 </RelativeLayout>

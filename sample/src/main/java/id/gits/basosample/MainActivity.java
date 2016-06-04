@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mBasoProgressView = (BasoProgressView) findViewById(R.id.basoProgressView);
+        mBasoProgressView = (BasoProgressView) findViewById(R.id.basoProgressView);
         findViewById(R.id.btnStart).setOnClickListener(this);
         findViewById(R.id.btnStop).setOnClickListener(this);
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btnStart) {
             mBasoProgressView.startProgress();
         } else if (v.getId() == R.id.btnStop) {
-            mBasoProgressView.stopAndError();
+            mBasoProgressView.stopAndGone();
         }
     }
 }

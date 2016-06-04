@@ -20,10 +20,11 @@
         <TextView
             android:id="@+id/basoProgtessText"
             android:layout_width="wrap_content"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="Lorem ipsum"/>
+            tools:text="Lorem ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. "/>
 
     </LinearLayout>
 
@@ -43,8 +44,9 @@
             android:id="@+id/basoStoppedText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="Lorem Ipsum"/>
+            tools:text="Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. "/>
 
         <Button
             android:id="@+id/basoStoppedButton"

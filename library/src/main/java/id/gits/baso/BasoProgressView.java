@@ -82,6 +82,7 @@ public class BasoProgressView extends RelativeLayout {
         }
 
         progressText.setText(mProgressText);
+        stoppedButton.setVisibility(mIsRetriable ? View.VISIBLE : View.GONE);
         stoppedLayout.setVisibility(mIsProgressing ? View.GONE : View.VISIBLE);
         progressLayout.setVisibility(mIsProgressing ? View.VISIBLE : View.GONE);
     }
@@ -104,6 +105,7 @@ public class BasoProgressView extends RelativeLayout {
 
     public void stopAndGone() {
         mIsProgressing = false;
+        mIsRetriable = false;
 
         initLayout();
     }
