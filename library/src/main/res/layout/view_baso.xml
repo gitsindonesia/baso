@@ -6,19 +6,19 @@
               android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/basoProgressLayout"
+        android:id="@+id/baso_ProgressLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
 
         <ProgressBar
-            android:id="@+id/basoProgressBar"
+            android:id="@+id/baso_ProgressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/basoProgtessText"
+            android:id="@+id/baso_ProgtessText"
             android:layout_width="wrap_content"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -29,19 +29,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/basoStoppedLayout"
+        android:id="@+id/baso_StoppedLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/basoStoppedImage"
+            android:id="@+id/baso_StoppedImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/basoStoppedText"
+            android:id="@+id/baso_StoppedText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -49,7 +49,7 @@
             tools:text="Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. "/>
 
         <Button
-            android:id="@+id/basoStoppedButton"
+            android:id="@+id/baso_StoppedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"/>

@@ -75,11 +75,17 @@ public class BasoProgressView extends RelativeLayout {
     }
 
     private void initLayout() {
+        stoppedButton.setText(mRetryText);
         if (mIsError) {
+            stoppedTvMessage.setVisibility(View.VISIBLE);
+            stoppedPicture.setVisibility(View.VISIBLE);
             stoppedTvMessage.setText(mErrorText);
-            stoppedButton.setText(mRetryText);
             stoppedPicture.setImageDrawable(mStoppedImageDrawable);
+        } else {
+            stoppedPicture.setVisibility(View.GONE);
+            stoppedTvMessage.setVisibility(View.GONE);
         }
+
 
         progressText.setText(mProgressText);
         stoppedButton.setVisibility(mIsRetriable ? View.VISIBLE : View.GONE);
@@ -106,6 +112,7 @@ public class BasoProgressView extends RelativeLayout {
     public void stopAndGone() {
         mIsProgressing = false;
         mIsRetriable = false;
+        mIsError = false;
 
         initLayout();
     }
@@ -131,11 +138,11 @@ public class BasoProgressView extends RelativeLayout {
 
     private void injectViews() {
         inflate(getContext(), R.layout.view_baso, this);
-        progressLayout = (ViewGroup) findViewById(R.id.basoProgressLayout);
-        progressText = (TextView) findViewById(R.id.basoProgtessText);
-        stoppedLayout = (ViewGroup) findViewById(R.id.basoStoppedLayout);
-        stoppedTvMessage = (TextView) findViewById(R.id.basoStoppedText);
-        stoppedPicture = (ImageView) findViewById(R.id.basoStoppedImage);
-        stoppedButton = (Button) findViewById(R.id.basoStoppedButton);
+        progressLayout = (ViewGroup) findViewById(R.id.baso_ProgressLayout);
+        progressText = (TextView) findViewById(R.id.baso_ProgtessText);
+        stoppedLayout = (ViewGroup) findViewById(R.id.baso_StoppedLayout);
+        stoppedTvMessage = (TextView) findViewById(R.id.baso_StoppedText);
+        stoppedPicture = (ImageView) findViewById(R.id.baso_StoppedImage);
+        stoppedButton = (Button) findViewById(R.id.baso_StoppedButton);
     }
 }

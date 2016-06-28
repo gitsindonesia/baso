@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import java.util.Date;
+
 import id.gits.baso.BasoProgressView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -14,9 +16,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mBasoProgressView = (BasoProgressView) findViewById(R.id.basoProgressView);
-        findViewById(R.id.btnStart).setOnClickListener(this);
-        findViewById(R.id.btnStop).setOnClickListener(this);
+        mBasoProgressView = (BasoProgressView) findViewById(R.id.baso_ProgressView);
+        findViewById(R.id.baso_btnStart).setOnClickListener(this);
+        findViewById(R.id.baso_btnStopAndError).setOnClickListener(this);
+        findViewById(R.id.baso_btnStopAndGone).setOnClickListener(this);
 
         mBasoProgressView.setOnRetryClickListener(new View.OnClickListener() {
             @Override
@@ -30,9 +33,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.btnStart) {
+        if (v.getId() == R.id.baso_btnStart) {
             mBasoProgressView.startProgress();
-        } else if (v.getId() == R.id.btnStop) {
+        } else if (v.getId() == R.id.baso_btnStopAndError) {
+            mBasoProgressView.stopAndError("Error: " + new Date().getTime(), true);
+        } else if (v.getId() == R.id.baso_btnStopAndGone) {
             mBasoProgressView.stopAndGone();
         }
     }
