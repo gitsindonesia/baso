@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/baso_app_name"
+        android:label="Baso Sample"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
