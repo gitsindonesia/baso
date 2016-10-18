@@ -1,4 +1,6 @@
 # Baso Progress View
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/id.gits/baso/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/id.gits/baso/) 
+
 ProgressBar with button and text below it.
 <p>
 <img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image1.png" alt="Progressing" width="250"/>
