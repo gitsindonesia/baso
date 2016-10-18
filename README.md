@@ -63,7 +63,7 @@ Or you have to call ```stopAndError```.
 ```
 basoProgressView.stopAndError("Oops. Something happened.");
 ```
-#### Stop progress and show both image or button
+#### Stop progress and show both image and button
 You have to declare ```baso_finishSrc``` either on your xml layout or programmatically with ```setFinishedImageResource``` method.
 ```
 basoProgressView.setFinishedImageResource(R.drawable.baso_sample_error);
@@ -76,6 +76,7 @@ basoProgressView.setOnButtonClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         basoProgressView.startProgress();
+        //TODO: your action here such as call api
     }
 });
 ```
