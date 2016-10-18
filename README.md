@@ -1,6 +1,10 @@
 # Baso Progress View
 ProgressBar with button and text below it.
-
+<p>
+<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image1.png" alt="Progressing" width="200"/>
+<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image2.png" alt="Stopped without image" width="200"/>
+<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image3.png" alt="Stopped with image" width="200"/>
+</p>
 ## Sample Usage
 ### XML Layout
 #### Without styles.xml
@@ -49,20 +53,22 @@ final BasoProgressView basoProgressView = (BasoProgressView) findViewById(R.id.b
 basoProgressView.startProgress();
 ```
 #### Stop the progress with button
+If you have declared ```baso_finishButtonText``` on your xml layout, you can just call ```stop``` method.
 ```
-//if you have declared ```baso_finishButtonText``` on your xml layout, you can just call ```stop``` metho;
-
-//or you have to call ```stopAndError```.
+basoProgressView.stop();
+```
+Or you have to call ```stopAndError```.
+```
 basoProgressView.stopAndError("Oops. Something happened.");
 ```
 #### Stop the progress with image and button
+You have to declare ```baso_finishSrc``` either on your xml layout or programmatically with ```setFinishedImageResource``` method.
 ```
-basoProgressView.stop();
-
-//or you can also set the error text.
+basoProgressView.setFinishedImageResource(R.drawable.baso_sample_error);
 basoProgressView.stopAndError("Oops. Something happened.");
 ```
 #### Set the button click listener
+Don't forget to create click listener for the button.
 ```
 basoProgressView.setOnButtonClickListener(new View.OnClickListener() {
     @Override
@@ -79,7 +85,7 @@ For complete sample usage, you can take a look at the sample project.
 The latest version is available in the Sonatype snapshots repo.
 ```
 dependencies {
-   compile 'id.gits:mvvmcore:0.1'
+   compile 'id.gits:baso:1.0'
 }
 ```
 
