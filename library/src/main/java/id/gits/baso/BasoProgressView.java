@@ -137,27 +137,45 @@ public class BasoProgressView extends RelativeLayout {
         }
     }
 
+    /**
+     * Set listener for stopped button click event
+     *
+     * @param onClickListener
+     */
     public void setOnButtonClickListener(OnClickListener onClickListener) {
         mStoppedButton.setOnClickListener(onClickListener);
     }
 
+    /**
+     * Show progress bar and progress text below it (if any)
+     */
     public void startProgress() {
         mBasoStatus = BasoStatus.PROGRESSING;
         toggleLayout();
     }
 
+    /**
+     * Hide all views
+     */
     public void stopAndGone() {
         mBasoStatus = BasoStatus.GONE;
 
         toggleLayout();
     }
 
+    /**
+     * Show stopped layout
+     */
     public void stop() {
         mBasoStatus = BasoStatus.ERROR;
 
         toggleLayout();
     }
 
+    /**
+     * Set stopped text and show stopped layout
+     * @param errorMessage
+     */
     public void stopAndError(String errorMessage) {
         mBasoStatus = BasoStatus.ERROR;
         setFinishedText(errorMessage);
