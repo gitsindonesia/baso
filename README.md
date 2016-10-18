@@ -48,7 +48,14 @@ ProgressBar with button and text below it.
 final BasoProgressView basoProgressView = (BasoProgressView) findViewById(R.id.baso_ProgressView);   
 basoProgressView.startProgress();
 ```
-#### Stop the progress
+#### Stop the progress with button
+```
+//if you have declared ```baso_finishButtonText``` on your xml layout, you can just call ```stop``` metho;
+
+//or you have to call ```stopAndError```.
+basoProgressView.stopAndError("Oops. Something happened.");
+```
+#### Stop the progress with image and button
 ```
 basoProgressView.stop();
 
