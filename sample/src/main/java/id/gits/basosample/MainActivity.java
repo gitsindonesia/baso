@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import java.util.Date;
-
 import id.gits.baso.BasoProgressView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -38,10 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mBasoProgressView.startProgress();
         } else if (v.getId() == R.id.baso_btnStopAndError) {
             mBasoProgressView.setFinishedImageResource(R.drawable.baso_sample_error);
-            mBasoProgressView.stopAndError("Error: " + new Date().getTime());
+            mBasoProgressView.stop();
         } else if (v.getId() == R.id.baso_btnStopAndErrorNoImage) {
             mBasoProgressView.setFinishedImageDrawable(null);
-            mBasoProgressView.stopAndError("Error: " + new Date().getTime());
+            mBasoProgressView.stopAndError("Something happened");
         } else if (v.getId() == R.id.baso_btnStopAndGone) {
             mBasoProgressView.stopAndGone();
         }
