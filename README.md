@@ -80,11 +80,9 @@ basoProgressView.setOnButtonClickListener(new View.OnClickListener() {
 });
 ```
 
-
-For complete sample usage, you can take a look at the sample project.
+### For complete sample usage, you can take a look at the sample project.
 
 ## Install
-The latest version is available in the Sonatype snapshots repo.
 ```
 dependencies {
    compile 'id.gits:baso:1.0'
