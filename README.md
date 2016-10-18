@@ -1,9 +1,9 @@
 # Baso Progress View
 ProgressBar with button and text below it.
 <p>
-<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image1.png" alt="Progressing" width="200"/>
-<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image2.png" alt="Stopped without image" width="200"/>
-<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image3.png" alt="Stopped with image" width="200"/>
+<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image1.png" alt="Progressing" width="250"/>
+<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image2.png" alt="Stopped without image" width="250"/>
+<img src="https://raw.githubusercontent.com/gitsindonesia/baso/master/image3.png" alt="Stopped with image" width="250"/>
 </p>
 ## Sample Usage
 ### XML Layout
@@ -52,7 +52,7 @@ ProgressBar with button and text below it.
 final BasoProgressView basoProgressView = (BasoProgressView) findViewById(R.id.baso_ProgressView);   
 basoProgressView.startProgress();
 ```
-#### Stop the progress with button
+#### Stop progress and show the button
 If you have declared ```baso_finishButtonText``` on your xml layout, you can just call ```stop``` method.
 ```
 basoProgressView.stop();
@@ -61,7 +61,7 @@ Or you have to call ```stopAndError```.
 ```
 basoProgressView.stopAndError("Oops. Something happened.");
 ```
-#### Stop the progress with image and button
+#### Stop progress and show both image or button
 You have to declare ```baso_finishSrc``` either on your xml layout or programmatically with ```setFinishedImageResource``` method.
 ```
 basoProgressView.setFinishedImageResource(R.drawable.baso_sample_error);
