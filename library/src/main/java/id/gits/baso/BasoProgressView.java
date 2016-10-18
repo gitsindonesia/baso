@@ -173,7 +173,7 @@ public class BasoProgressView extends RelativeLayout {
     }
 
     /**
-     * Set stopped text and show stopped layout
+     * Set text and show stopped layout
      * @param errorMessage
      */
     public void stopAndError(String errorMessage) {
