@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#19a"
+    android:background="#e2e2e2"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/baso_btnGroup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:gravity="bottom">
 
         <Button
             android:id="@+id/baso_btnStart"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="START"/>
+            android:text="START PROGRESS"/>
 
 
         <Button
@@ -29,24 +31,35 @@
             android:text="STOP AND GONE"/>
 
         <Button
+            android:id="@+id/baso_btnStopAndErrorNoImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="STOP AND ERROR 1"/>
+
+        <Button
             android:id="@+id/baso_btnStopAndError"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="STOP AND ERROR"/>
+            android:text="STOP AND ERROR 2"/>
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baso_btnGroup"
+        android:padding="16dp"
+        android:text="Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet"/>
+
     <id.gits.baso.BasoProgressView
         android:id="@+id/baso_ProgressView"
+        style="@style/BasoCustom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFF"
-        android:gravity="center"
-        app:defaultErrorText="Something happened"
-        app:progressText="Loading"
-        app:retryText="Retry"
+        android:layout_below="@id/baso_btnGroup"
         />
 
 
-</LinearLayout>
+</RelativeLayout>

@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/baso_ProgressLayout"
+        android:id="@+id/baso_ProgressingLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:visibility="gone">
 
         <ProgressBar
-            android:id="@+id/baso_ProgressBar"
+            android:id="@+id/baso_ProgressingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/baso_ProgtessText"
+            android:id="@+id/baso_ProgressingText"
             android:layout_width="wrap_content"
-            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             tools:text="Lorem ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. "/>
 
@@ -37,8 +39,11 @@
 
         <ImageView
             android:id="@+id/baso_StoppedImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="true"
+            tools:src="#444"/>
 
         <TextView
             android:id="@+id/baso_StoppedText"
@@ -52,8 +57,10 @@
             android:id="@+id/baso_StoppedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            tools:text="Try again"/>
 
 
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>

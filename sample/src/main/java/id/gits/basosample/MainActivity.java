@@ -19,9 +19,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBasoProgressView = (BasoProgressView) findViewById(R.id.baso_ProgressView);
         findViewById(R.id.baso_btnStart).setOnClickListener(this);
         findViewById(R.id.baso_btnStopAndError).setOnClickListener(this);
+        findViewById(R.id.baso_btnStopAndErrorNoImage).setOnClickListener(this);
         findViewById(R.id.baso_btnStopAndGone).setOnClickListener(this);
 
-        mBasoProgressView.setOnRetryClickListener(new View.OnClickListener() {
+        mBasoProgressView.setOnButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mBasoProgressView.startProgress();
@@ -36,7 +37,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.baso_btnStart) {
             mBasoProgressView.startProgress();
         } else if (v.getId() == R.id.baso_btnStopAndError) {
-            mBasoProgressView.stopAndError("Error: " + new Date().getTime(), true);
+            mBasoProgressView.setFinishedImageResource(R.drawable.baso_sample_error);
+            mBasoProgressView.stopAndError("Error: " + new Date().getTime());
+        } else if (v.getId() == R.id.baso_btnStopAndErrorNoImage) {
+            mBasoProgressView.setFinishedImageDrawable(null);
+            mBasoProgressView.stopAndError("Error: " + new Date().getTime());
         } else if (v.getId() == R.id.baso_btnStopAndGone) {
             mBasoProgressView.stopAndGone();
         }

@@ -8,4 +8,14 @@
         <item name="colorAccent">#FF4081</item>
     </style>
 
+    <style name="BasoCustom">
+        <item name="android:background">#FFF</item>
+        <item name="baso_finishText">Something happened</item>
+        <item name="baso_finishTextSize">18sp</item>
+        <item name="baso_finishButtonText">Try Again</item>
+        <item name="baso_progressText">Loading</item>
+        <item name="baso_finishSrc">@drawable/baso_sample_error</item>
+        <item name="baso_finishSrcWidth">160dp</item>
+    </style>
+
 </resources>

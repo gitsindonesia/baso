@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="BasoProgressView">
-        <attr name="progressText" format="string"/>
-        <attr name="defaultErrorText" format="string"/>
-        <attr name="retryText" format="string"/>
-        <attr name="srcErrorImage" format="reference"/>
-        <attr name="firstProgressing" format="boolean"/>
-        <attr name="retriable" format="boolean"/>
-        <!--<attr name="labelPosition" format="enum">-->
-        <!--<enum name="left" value="0"/>-->
-        <!--<enum name="right" value="1"/>-->
-        <!--</attr>-->
+        <attr name="baso_finishButtonText" format="string"/>
+        <attr name="baso_finishButtonBackground" format="color|reference"/>
+        <attr name="baso_finishText" format="string"/>
+        <attr name="baso_finishTextSize" format="dimension"/>
+        <attr name="baso_finishSrc" format="color|reference"/>
+        <attr name="baso_finishSrcWidth" format="dimension"/>
+        <attr name="baso_finishSrcHeight" format="dimension"/>
+        <attr name="baso_progressText" format="string"/>
     </declare-styleable>
 </resources>
