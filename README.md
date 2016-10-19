@@ -96,10 +96,10 @@ dependencies {
    compile 'id.gits:baso:1.0'
 }
 ```
-### About GITS Indonesia
+## About GITS Indonesia
 GITS Indonesia has been active in IT Industry since 2010. Since then, we have developed a lot of applications, both initiative projects and client requests. Our developers are familiar with desktop, website, and mobile programming, but we are currently focusing in mobile.
 
-https://gits.co.id
+http://gits.co.id
 ## License
 ```
 Copyright 2016 GITS Indonesia.
