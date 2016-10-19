@@ -71,7 +71,7 @@ You have to declare ```baso_finishSrc``` either on your xml layout or programmat
 basoProgressView.setFinishedImageResource(R.drawable.baso_sample_error);
 basoProgressView.stopAndError("Oops. Something happened.");
 ```
-#### Complete the progress and make it invinsible
+#### Complete the progress and make it invisible
 Once you have completed the action and you wanted to hide BasoProgressView, you can just call ```stopAndGone``` and use ```startProgress``` to start progressing again.
 ```
 basoProgressView.stopAndGone();
@@ -96,7 +96,10 @@ dependencies {
    compile 'id.gits:baso:1.0'
 }
 ```
+### About GITS Indonesia
+GITS Indonesia has been active in IT Industry since 2010. Since then, we have developed a lot of applications, both initiative projects and client requests. Our developers are familiar with desktop, website, and mobile programming, but we are currently focusing in mobile.
 
+https://gits.co.id
 ## License
 ```
 Copyright 2016 GITS Indonesia.
