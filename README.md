@@ -15,7 +15,6 @@ ProgressBar with button and text below it.
     android:id="@+id/baso_ProgressView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@id/baso_btnGroup"
     android:background="#FFF"
     android:gravity="center"
     app:baso_finishButtonText="Retry"
@@ -33,7 +32,6 @@ ProgressBar with button and text below it.
     style="@style/BasoCustom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@id/baso_btnGroup"
 />
 ```
 ```
@@ -55,9 +53,9 @@ final BasoProgressView basoProgressView = (BasoProgressView) findViewById(R.id.b
 basoProgressView.startProgress();
 ```
 #### Stop progress and show the button
-The button will be automatically visible if you had written ```baso_finishButtonText``` on xml layout. Once you have completed the action and you wanted to stop the progress, you can just call ```stop``` or ```stopAndError``` method.
+The button will be automatically visible if you had written ```baso_finishButtonText``` on xml layout. Once you have completed the action and you wanted to stop the progress and show a message (or error message), you can just call ```stop``` or ```stopAndError``` method.
 ```
-// set message on the TextView or you can set baso_progressText on your xml layout.
+// set message on the TextView or you can set baso_finishText on your xml layout.
 basoProgressView.setFinishedText("Something happened");
 
 // stop the progress
@@ -72,6 +70,11 @@ You have to declare ```baso_finishSrc``` either on your xml layout or programmat
 ```
 basoProgressView.setFinishedImageResource(R.drawable.baso_sample_error);
 basoProgressView.stopAndError("Oops. Something happened.");
+```
+#### Complete the progress and make it invinsible
+Once you have completed the action and you wanted to hide BasoProgressView, you can just call ```stopAndGone``` and use ```startProgress``` to start progressing again.
+```
+basoProgressView.stopAndGone();
 ```
 #### Set the button click listener
 Don't forget to create click listener for the button.
