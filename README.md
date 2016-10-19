@@ -1,5 +1,5 @@
 # Baso Progress View
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/id.gits/baso/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/id.gits/baso/) 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/id.gits/baso/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/id.gits/baso/) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-BasoProgressView-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/4538)
 
 ProgressBar with button and text below it.
 <p>
