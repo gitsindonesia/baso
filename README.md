@@ -55,11 +55,15 @@ final BasoProgressView basoProgressView = (BasoProgressView) findViewById(R.id.b
 basoProgressView.startProgress();
 ```
 #### Stop progress and show the button
-If you have declared ```baso_finishButtonText``` on your xml layout, you can just call ```stop``` method.
+The button will be automatically visible if you had written ```baso_finishButtonText``` on xml layout. Once you have completed the action and you wanted to stop the progress, you can just call ```stop``` or ```stopAndError``` method.
 ```
+// set message on the TextView or you can set baso_progressText on your xml layout.
+basoProgressView.setFinishedText("Something happened");
+
+// stop the progress
 basoProgressView.stop();
 ```
-Or you have to call ```stopAndError```.
+Or you can simply call ```stopAndError```.
 ```
 basoProgressView.stopAndError("Oops. Something happened.");
 ```
